@@ -136,7 +136,7 @@ describe('Central de Atendimento ao Cliente TAT', function() {
         cy.url()
             .should('contain','privacy.html')
     })
-    it.only('testa a página da política de privacidade de forma independente',()=>{
+    it('testa a página da política de privacidade de forma independente',()=>{
         cy.get('a[href="privacy.html"]')
             .invoke('removeAttr','target')
             .click()
